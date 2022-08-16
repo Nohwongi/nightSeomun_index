@@ -1,0 +1,114 @@
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    height: 90px;
+    background-color: #141E3C;
+    font-size: 32px;
+    color: #FFE100;
+    font-weight: 700;
+    text-align: center;
+    line-height: 90px;
+}
+
+.stand {
+    position: relative;
+}
+
+.stand div {
+    display: block;
+}
+
+.stand>p {
+    font-size: 20px;
+    color: #FF2D2D;
+    text-align: center;
+    font-weight: 700;
+}
+
+.stand_img {
+    width: 100%;
+    padding-top: 250%;
+    background-image: url(../img/bg_minimap_r.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100%;
+    position: relative;
+}
+
+.stand>ul {
+    width: 40%;
+    position: absolute;
+    top: 140px;
+    left: 60%;
+}
+
+.stand>ul>li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border: 1px dotted #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 24px;
+    text-align: left;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+}
+
+.stand>ul>li>span {
+    display: inline-block;
+    border-radius: 3px;
+    background: #141E3C;
+    font-weight: bold;
+    color: #fff;
+    width: 20px;
+    height: 15px;
+    position: relative;
+    top: 0px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 26px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    h2 {
+        font-size: 24px;
+        height: 45px;
+        line-height: 45px;
+    }
+}

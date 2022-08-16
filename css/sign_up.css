@@ -1,0 +1,98 @@
+section {
+    width: 1200px;
+    margin: auto;
+}
+
+
+/** first section **/
+h2 {
+    height: 90px;
+    background-color: #141E3C;
+    font-size: 32px;
+    color: #FFE100;
+    font-weight: 700;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+/** second section **/
+.input_info {
+    margin-top: 20px;
+}
+
+.input_info li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input_info li>label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input_info li>input {
+    height: 28px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input_info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.input_info div {
+    text-align: center;
+    margin: 45px 0 86px;
+}
+
+.input_info div>input {
+    background-color: #141E3C;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    section {
+        width: 100%;
+    }
+
+    .input_info {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 28px;
+        height: 75px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 26px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    h2 {
+        font-size: 24px;
+        height: 45px;
+        line-height: 45px;
+    }
+}

@@ -1,0 +1,220 @@
+section {
+    width: 1200px;
+    margin: auto;
+}
+
+/** nav start **/
+nav {
+    background-color: #141e3c;
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    width: 10%;
+    text-align: center;
+}
+
+nav a {
+    font-size: 18px;
+    color: #ffe100;
+}
+
+
+/** first section start **/
+.search_wrap {
+    height: 90px;
+    background-color: #141E3C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search {
+    height: 44px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.search>input {
+    font-size: 15px;
+    height: 38px;
+    width: 90%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.search>a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/btn-search.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: right center;
+}
+
+.search_wrap>p {
+    margin-right: 2%;
+}
+
+.search_wrap>p>a {
+    color: #FFE100;
+}
+
+.market_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.market_info {
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.market_info article {
+    width: 45%;
+}
+
+.market_info a {
+    display: block;
+    color: #141e3c;
+    font-size: 16px;
+    border-bottom: 1px dotted #a1a2a3;
+    padding-bottom: 5px;
+}
+
+.market_info p {
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.market_info span {
+    color: #f91e1e;
+    display: block;
+}
+
+.market_img1 {
+    width: 50%;
+    padding-top: 40%;
+    background-image: url(../img/market_namchun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    section {
+        width: 100%;
+    }
+    
+    nav>ul {
+        width: 100%;
+    }
+
+    nav li {
+        width: 12%;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+
+    .search_wrap>p>a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    .market_info a {
+        font-size: 14px;
+    }
+    
+    .market_info p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .market_info {
+        padding: 10px;
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+
+    .search_wrap>input {
+        width: 70%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    nav a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+    
+    nav li {
+        width: 25%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    .market_info {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .search_wrap>input {
+        width: 70%;
+        margin-left: 3%;
+    }
+
+    .search_wrap>p>a {
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+}
